@@ -6,6 +6,8 @@ Tool for multimodal annotation (audio, video).
 
 *warning:* Documentation update is in progress...
 
+Author: University of West Bohemia, Pilsen, Czech Republic. (Pavel Campr / campr@kky.zcu.cz, Milan Herbig / herbig@students.zcu.cz)
+
 
 Installation - for annotators
 =============================
