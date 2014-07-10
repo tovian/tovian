@@ -54,6 +54,15 @@ docs/_build/
 
 # Tovian
 config.ini
+README.html
+
+config.ini.*
+!config.ini.dist
+
 data/update
 update.bat
-README.html
+
+*.db
+
+.idea
+.svn
