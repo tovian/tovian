@@ -54,3 +54,5 @@ docs/_build/
 
 # Tovian
 config.ini
+data/update
+update.bat
