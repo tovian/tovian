@@ -4,8 +4,7 @@
 
 Tool for multimodal annotation (audio, video).
 
-.. warning::
-   Documentation update is in progress...
+*warning:* Documentation update is in progress...
 
 
 Installation - for annotators
@@ -14,12 +13,11 @@ Installation - for annotators
 Windows
 -------
 
-Windows binaries can be downloaded from http://tovian.zcu.cz in a single ZIP file.
+Windows binaries can be downloaded from http://tovian.zcu.cz/packages/tovian_win32_stable.zip in a single ZIP file.
 
 Unzip the file in your destination folder. Copy file ``config.ini.dist`` to ``config.ini``. Open ``config.ini`` and edit the configuration values (mainly the database url), which should be given by the administrators. The application is now ready to run.
 
-.. warning::
-   Due to an uknown bug, the destination folder or its parental folders cannot contain special characters and diacritical marks.
+*warning:* Due to an uknown bug, the destination folder or its parental folders cannot contain special characters and diacritical marks.
 
 Linux
 -----
@@ -36,15 +34,13 @@ MySQL is expected to be running on a central server. The annotators connect to t
 
     database.url:               mysql://database_user:database_password@server/database_name?charset=utf8
 
-.. note::
-   Please note ``?charset=utf8`` at the end, which prevents some problems with encoding.
+Note: Please note ``?charset=utf8`` at the end, which prevents some problems with encoding.
 
 SQLite can be used for local usage without network connection to a central database server. Database url in ``config.ini`` has this form:
 
    database.url:               sqlite:///data/tovian.db
 
-.. note::
-   The path ``data/tovian.db`` is relative. You can specify full path: ``sqlite:////absolute/path/to/tovian.db``
+Note: The path ``data/tovian.db`` is relative. You can specify full path: ``sqlite:////absolute/path/to/tovian.db``
 
 
 Step 1 - Create new database
@@ -92,8 +88,7 @@ Create limited user with read-only access to all tables and write access to anno
 
     DROP TABLE `annotation_objects`, `annotation_values`, `logs`;
 
-.. note::
-   Two temporary tables were created do allow granting the priviliges to these tables, which are dropped after. These tables will be created automatically again in the next step.
+Note: Two temporary tables were created do allow granting the priviliges to these tables, which are dropped after. These tables will be created automatically again in the next step.
 
 
 Step 3 - Set database urls in config.ini
