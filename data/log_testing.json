@@ -1,0 +1,66 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters": {
+        "simple": {
+            "format": "%(asctime)s %(levelname)-5s %(threadName)s [%(module)s:%(funcName)s:%(lineno)d] %(message)s"
+        },
+        "debug_formatter": {
+            "format": "%(asctime)s %(levelname)-5s %(threadName)s [%(name)s:%(module)s:%(funcName)s:%(lineno)d] %(message)s"
+        }
+    },
+
+    "filters": {
+        "filter_info": { "()": "tovian.log.FilterInfo" }
+    },
+
+    "handlers": {
+        "console_stdout": {
+            "class": "logging.StreamHandler",
+            "level": "DEBUG",
+            "formatter": "simple",
+            "stream": "ext://sys.stdout",
+            "filters": ["filter_info"]
+        },
+
+        "console_stderr": {
+            "class": "logging.StreamHandler",
+            "level": "WARNING",
+            "formatter": "simple",
+            "stream": "ext://sys.stderr"
+        },
+
+        "debug_file_handler": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "level": "DEBUG",
+            "formatter": "debug_formatter",
+            "filename": "%ROOTDIR%/testing_debug.log",
+            "maxBytes": "10485760",
+            "backupCount": "10",
+            "encoding": "utf8"
+        },
+
+        "error_file_handler": {
+            "class": "logging.handlers.RotatingFileHandler",
+            "level": "WARNING",
+            "formatter": "simple",
+            "filename": "%ROOTDIR%/testing_errors.log",
+            "maxBytes": "10485760",
+            "backupCount": "10",
+            "encoding": "utf8"
+        }
+    },
+
+    "loggers": {
+        "my_module": {
+            "level": "DEBUG",
+            "handlers": ["console_stdout", "console_stderr"],
+            "propagate": "no"
+        }
+    },
+
+    "root": {
+        "level": "DEBUG",
+        "handlers": ["console_stdout", "console_stderr", "debug_file_handler", "error_file_handler"]
+    }
+}

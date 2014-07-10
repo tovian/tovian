@@ -1,0 +1,30 @@
+# default configuration file
+# copy it to "config.ini" to make modifications
+
+[DEFAULT]
+# for MySQL connections, use "?charset=utf8"
+# this url is for limited users, who have write privileges only to selected tables
+database.url:               sqlite:///tovian.db
+
+# enable debug output of SQL alchemy?
+sqlalchemy.engine.echo:     no
+
+# default login values
+annotator.username:
+annotator.password:
+
+# tovian packages
+packages.url:               http://tovian.zcu.cz/packages
+
+[production]
+
+[debug]
+
+[debug_db]
+
+[testing]
+sqlalchemy.engine.echo:     yes
+
+[admin]
+# this url is for admin users, who have all privileges to all tables
+database.url:               sqlite:///tovian.db
