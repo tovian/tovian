@@ -1,0 +1,77 @@
+Reset DB:
+--------
+python tovian_cli.py init_db
+python tovian_cli.py load_fixtures
+
+Useful methods for GUI:
+
+
+1) LOGIN
+------------------------------------------------------------------------------------------------------
+repository.annotators.get_one_enabled_by_email_and_password(email, password)
+- -> models.Annotator or None
+- None returned if annotator doesn't exist or password doesn't match
+
+
+2) VIDEO SELECTION
+------------------------------------------------------------------------------------------------------
+annotator.videos_to_annotate()
+- -> list of models.Video
+- list of videos that can be annotated by annotator
+
+
+3) ANNOTATION OF SELECTED VIDEO
+------------------------------------------------------------------------------------------------------
+annotator.video_to_annotate_by_id(id)
+- -> models.Video or None
+- returns video by id that can be annotated by annotator
+
+video.annotation_objects_all()
+- -> list of (AnnotationObject, int, int)
+- returns all annotation objects related to video, together with first and last frame
+
+video.annotation_objects_in_frame(frame)
+- -> list of (AnnotationObject, int, int)
+- returns annotation objects (together with first and last frame) related to this video that are visible in given frame
+
+video.annotation_objects_in_frame_intervals(frame_intervals)
+- -> list of (AnnotationObject, int, int)
+- returns annotation objects related to this video that are visible in given time intervals. <from, to>
+- related AnnotationValues to returned AnnotationObjects are eagerly loaded from database (not lazily which is the default, and used in annotation_objects_in_frame).
+
+annotation_object.annotation_values_global()
+- -> list of AnnotationVarepository.annotators.get_one_enabled_by_email_and_passwordlue
+- returns list of all GLOBAL annotation values associated to this annotation object
+
+annotation_object.annotation_values_local()
+- -> list of AnnotationValue
+- returns list of all LOCAL annotation values associated to this annotation object, in all frames
+
+annotation_object.annotation_values_local_interpolate_in_frame(frame)
+- -> list of AnnotationValue
+- returns list of LOCAL annotation values for given frame
+- annotation values are interpolated when the annotation values are not specified exactly for given frame
+- interpolated values are newly created AnnotationValue instances with is_interpolated attribute set to True
+- newly created AnnotationValue instances are automatically expunged from sqlalchemy session, not to be persisted in the database
+
+annotation_object.is_active_in_frame(frame)
+- -> bool
+- returns True if this object is active (visible) in given frame
+
+repository.annotation_attributes.get_all()
+- -> list of entity.AnnotationAttribute
+- returns list of all existing AnnotationAttribute in database
+
+repository.annotation_attributes.get_one_by_name(name)
+- -> entity.AnnotationAttribute or None
+- returns one existing AnnotationAttribute in database by its name (e.g. u"position_rectangle")
+
+video.annotation_attributes
+- is a list of AnnotationAttribute that are enabled for given video
+
+video.annotation_object_next(current_frame, current_annotation_object)
+video.annotation_object_previous(current_frame, current_annotation_object)
+- -> (AnnotationObject, int, int)
+- returned tuple contains the next AnnotationObject and its starting and ending frame.
+- when current_annotation_object is not given (is None), the next AnnotationObject in future/past is found,
+- when current_annotation_object is given, the next AnnotationObject in current frame or in future/past is found

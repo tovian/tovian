@@ -1,0 +1,41 @@
+<RCC>
+  <qresource prefix="/icons">
+    <file>icons/cursor_circle.png</file>
+    <file>icons/cursor_rect.png</file>
+    <file>icons/info.png</file>
+    <file>icons/info16.png</file>
+    <file>icons/conect22.png</file>
+    <file>icons/app_icon.png</file>
+    <file>icons/rectangle.png</file>
+    <file>icons/circle.png</file>
+    <file>icons/ellipse.png</file>
+    <file>icons/point.png</file>
+    <file>icons/zoom.png</file>
+    <file>icons/undo.png</file>
+    <file>icons/commit.png</file>
+    <file>icons/cross.png</file>
+    <file>icons/tick.png</file>
+    <file>icons/warning.png</file>
+    <file>icons/database.png</file>
+    <file>icons/add_attrib.png</file>
+    <file>icons/edit.png</file>
+    <file>icons/delete.png</file>
+    <file>icons/close.png</file>
+    <file>icons/delete2.png</file>
+    <file>icons/about.png</file>
+    <file>icons/media-fast-backward.png</file>
+    <file>icons/media-fast-forward.png</file>
+    <file>icons/media-next.png</file>
+    <file>icons/media-pause.png</file>
+    <file>icons/media-play.png</file>
+    <file>icons/media-previous.png</file>
+    <file>icons/media-stop.png</file>
+    <file>icons/nonvisual.png</file>
+    <file>icons/goto.png</file>
+    <file>icons/mask.png</file>
+    <file>icons/mark.png</file>
+    <file>icons/jump_sec_backward.png</file>
+    <file>icons/jump_sec_forward.png</file>
+    <file>icons/save_mask.png</file>
+  </qresource>
+</RCC>

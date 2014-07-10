@@ -1,0 +1,28 @@
+{"test_football.mp4": [
+    {
+        "type": "rectangle",
+        "public_comment": "Another white player",
+        "annotation_values": [
+            ["position_rectangle", 0, [120, 173, 128, 190]],
+            ["position_rectangle", 30, [124, 175, 131, 189]],
+            ["football_identity_1", "white player"],
+            ["football_activity_1", 0, "walking"]
+        ]
+    },
+    {
+        "type": "point",
+        "annotation_values": [
+            ["football_object_2", "gate left top"],
+            ["position_point", 142, [501, 65]],
+            ["position_point", 157, [469, 72]],
+            ["position_point", 171, [455, 79]],
+            ["position_point", 203, [450, 83]],
+            ["position_point", 221, [457, 77]],
+            ["position_point", 254, [394, 70]],
+            ["position_point", 264, [359, 70]],
+            ["position_point", 291, [375, 53]],
+            ["position_point", 308, [331, 49]],
+            ["position_point", 333, [453, 0]]
+        ]
+    }
+]}
