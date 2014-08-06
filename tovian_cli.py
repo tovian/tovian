@@ -205,11 +205,16 @@ def action_export(args, root_dir):
 
         for table_name, table_data in data.iteritems():
             keys = sorted(table_data[0].keys())
-            dict_writer = csv.DictWriter(sys.stdout, keys)
 
-            dict_writer.writer.writerow([table_name])
-            dict_writer.writer.writerow(keys)
-            dict_writer.writerows(table_data)
+            # encode all strings to utf8
+            dict_writer = csv.DictWriter(sys.stdout, [v.encode('utf8') for v in keys])
+
+            dict_writer.writer.writerow([table_name.encode('utf8')])
+            dict_writer.writer.writerow([v.encode('utf8') for v in keys])
+
+            table_data_encoded = [{k: unicode(v).encode('utf8') if isinstance(v, basestring) else v for k,v in line.iteritems()} for line in table_data]
+            dict_writer.writerows(table_data_encoded)
+
             dict_writer.writer.writerow([])
 
     elif args.format == 'print':
