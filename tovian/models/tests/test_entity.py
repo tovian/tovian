@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 
-__version__ = "$Id: test_entity.py 327 2013-11-27 15:31:04Z campr $"
-
-
 import os
 import json
 import unittest
 
 import tovian.log as log
+
 
 root_dir = os.path.join(os.path.dirname(__file__), '..', '..', '..')
 log.setup_logging(os.path.join(root_dir, 'data', 'log_testing.json'), log_dir=os.path.join(root_dir, 'log'))

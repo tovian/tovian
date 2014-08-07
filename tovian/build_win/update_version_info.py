@@ -6,8 +6,6 @@ Updates information in data/version.json:
   revision number is extracted by svn or git
 """
 
-__version__ = "$Id: update_version_info.py 176 2013-09-19 13:00:52Z campr $"
-
 import sys
 import os
 import json

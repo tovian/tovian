@@ -4,8 +4,6 @@
 Main user video-selection form.
 """
 
-__version__ = "$Id: videoselect.py 347 2013-12-10 15:41:12Z herbig $"
-
 import os
 import urllib
 import logging

@@ -4,8 +4,6 @@
 Simple dialog displays combobox with allowed annotation attributes for current object.
 """
 
-__version__ = "$Id: attribselect.py 347 2013-12-10 15:41:12Z herbig $"
-
 import logging
 
 from PySide.QtCore import Signal
@@ -13,6 +11,7 @@ from PySide.QtGui import QDialog
 
 from tovian import models
 from ..forms.attribselectform import Ui_attribSelection
+
 
 logger = logging.getLogger(__name__)
 logger.debug('Import ' + __name__)

@@ -4,8 +4,6 @@
 Dialog form mask editing
 """
 
-__version__ = "$Id: mask.py 348 2013-12-12 11:40:55Z herbig $"
-
 import logging
 
 from PySide.QtGui import *
@@ -14,6 +12,7 @@ from PySide.QtCore import *
 from tovian.gui.forms import maskform
 from tovian.gui.components.graphics import MaskCanvas
 from tovian.gui.components.custom import OddQSlider, DJumpQSlider
+
 
 logger = logging.getLogger(__name__)
 logger.debug('Import ' + __name__)

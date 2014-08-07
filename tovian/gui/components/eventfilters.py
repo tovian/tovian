@@ -4,8 +4,6 @@
 Various event filters for filtering (catching) specific events on objects, where a filter is installed.
 """
 
-__version__ = "$Id: eventfilters.py 347 2013-12-10 15:41:12Z herbig $"
-
 from PySide.QtGui import QApplication, QGraphicsView, QToolTip
 from PySide.QtCore import Signal, QObject, QEvent, Qt, QPoint
 

@@ -4,9 +4,6 @@
     Version management.
 """
 
-__version__ = "$Id: version.py 330 2013-11-29 11:58:15Z campr $"
-
-
 import os
 import logging
 import json

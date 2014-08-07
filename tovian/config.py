@@ -6,9 +6,6 @@
     If this file is not present, default "config.ini.dist" is used.
 """
 
-__version__ = "$Id: config.py 330 2013-11-29 11:58:15Z campr $"
-
-
 import ConfigParser
 import os
 import sys

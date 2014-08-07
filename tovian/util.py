@@ -3,9 +3,9 @@
 """
     Tools mix
 """
+
 from copy import deepcopy
 
-__version__ = "$Id: util.py 218 2013-09-26 08:20:19Z campr $"
 
 def dict_merge(a, b):
     """

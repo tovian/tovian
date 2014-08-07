@@ -4,9 +4,6 @@
     Module that keeps global references to database engine and session.
 """
 
-__version__ = "$Id: database.py 319 2013-11-21 09:24:01Z campr $"
-
-
 import sqlalchemy
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import event
@@ -19,6 +16,7 @@ import warnings
 import threading
 
 import defaults
+
 
 logger = logging.getLogger(__name__)
 logger.debug('Import ' + __name__)

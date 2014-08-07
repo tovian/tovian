@@ -4,9 +4,6 @@
     Security tools
 """
 
-__version__ = "$Id: security.py 203 2013-09-23 08:11:27Z campr $"
-
-
 import bcrypt
 import logging
 

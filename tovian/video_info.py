@@ -7,7 +7,6 @@
 import json
 import subprocess
 
-__version__ = "$Id: video_info.py 312 2013-11-18 08:29:57Z campr $"
 
 def video_info_ffmpeg(filename):
     """

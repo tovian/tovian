@@ -4,14 +4,13 @@
 Simple dialog displays editbox with frame/time switch
 """
 
-__version__ = "$Id: goto.py 347 2013-12-10 15:41:12Z herbig $"
-
 import logging
 
 from PySide.QtCore import *
 from PySide.QtGui import *
 
 from ..forms.gotoform import Ui_gotoDialog
+
 
 logger = logging.getLogger(__name__)
 logger.debug('Import ' + __name__)

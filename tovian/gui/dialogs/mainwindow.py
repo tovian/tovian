@@ -4,8 +4,6 @@
 Main application dialog.
 """
 
-__version__ = "$Id: mainwindow.py 349 2013-12-12 11:41:18Z herbig $"
-
 import os
 import logging
 import datetime

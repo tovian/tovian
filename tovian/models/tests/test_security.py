@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 
-__version__ = "$Id: test_security.py 221 2013-09-26 09:59:06Z campr $"
-
-
 import unittest
 
 import tovian.models.security as security

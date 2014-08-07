@@ -4,12 +4,11 @@
 Custom implementation of Qt Widgets for various purposes
 """
 
-__version__ = "$Id: custom.py 347 2013-12-10 15:41:12Z herbig $"
-
 import logging
 
 from PySide.QtGui import *
 from PySide.QtCore import *
+
 
 logger = logging.getLogger(__name__)
 logger.debug('Import ' + __name__)

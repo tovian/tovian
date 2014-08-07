@@ -4,8 +4,6 @@
     Entity classes
 """
 
-__version__ = "$Id: entity.py 355 2014-04-15 11:44:14Z campr $"
-
 import logging
 from collections import defaultdict
 

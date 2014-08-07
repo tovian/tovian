@@ -5,12 +5,11 @@ Buffer module:
 - class Buffer caches data loaded from database.
 """
 
-__version__ = "$Id: buffer.py 347 2013-12-10 15:41:12Z herbig $"
-
 import logging
 import sys
 from PySide.QtCore import QObject, Signal, Slot, QMutex
 from tovian import models
+
 
 logger = logging.getLogger(__name__)
 logger.debug('Import ' + __name__)

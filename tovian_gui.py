@@ -5,8 +5,6 @@
 Application main launcher.
 """
 
-__version__ = "$Id: tovian_gui.py 330 2013-11-29 11:58:15Z campr $"
-
 import logging
 import os, sys
 import colorama

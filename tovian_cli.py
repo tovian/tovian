@@ -5,8 +5,6 @@
 Command line interface
 """
 
-__version__ = "$Id: tovian_cli.py 352 2014-03-03 18:22:45Z campr $"
-
 import os
 import sys
 import logging

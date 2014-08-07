@@ -4,8 +4,6 @@
 Comment.
 """
 
-__version__ = "$Id: downloader.py 347 2013-12-10 15:41:12Z herbig $"
-
 import os
 import threading
 import urllib

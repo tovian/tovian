@@ -4,11 +4,10 @@
     Interactive console
 """
 
-__version__ = "$Id: interactive.py 352 2014-03-03 18:22:45Z campr $"
-
 import sys
 import getpass
 import termcolor
+
 
 def format_header(msg):
     return termcolor.colored(msg, color='green', attrs=['underline', 'bold'])

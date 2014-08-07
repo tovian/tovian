@@ -4,8 +4,6 @@
 Application main launcher.
 """
 
-__version__ = "$Id: launcher.py 347 2013-12-10 15:41:12Z herbig $"
-
 import logging
 import urllib
 import json

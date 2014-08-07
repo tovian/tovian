@@ -4,8 +4,6 @@
 User dialog when downloading a file. Dialog shows downloading progress.
 """
 
-__version__ = "$Id: download.py 347 2013-12-10 15:41:12Z herbig $"
-
 import os
 import logging
 

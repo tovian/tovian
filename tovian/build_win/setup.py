@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-__version__ = "$Id: setup.py 223 2013-09-26 11:57:35Z campr $"
-
 from distutils.core import setup
 import zipfile
 import py2exe
@@ -9,6 +7,7 @@ import os
 import update_version_info
 import shutil
 import PySide
+
 
 # automatically extract path to PySide
 dir_pyside = os.path.dirname(PySide.__file__)

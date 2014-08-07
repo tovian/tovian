@@ -7,8 +7,6 @@ Graphics components:
 - Drawing class
 """
 
-__version__ = "$Id: graphics.py 348 2013-12-12 11:40:55Z herbig $"
-
 import math
 from operator import itemgetter
 

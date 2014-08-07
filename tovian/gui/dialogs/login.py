@@ -4,8 +4,6 @@
 User login dialog class.
 """
 
-__version__ = "$Id: login.py 347 2013-12-10 15:41:12Z herbig $"
-
 import logging
 import ConfigParser
 import re

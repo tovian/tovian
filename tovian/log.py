@@ -4,8 +4,6 @@
     Logging - setup_logging() loads logging configuration from JSON file
 """
 
-__version__ = "$Id: log.py 268 2013-10-24 11:41:56Z campr $"
-
 import logging
 import logging.config
 import json

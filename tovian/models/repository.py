@@ -4,15 +4,13 @@
     Repository - interface for querying data
 """
 
-__version__ = "$Id: repository.py 355 2014-04-15 11:44:14Z campr $"
-
-
 import entity
 import database
 import sqlalchemy
 import logging
 import datetime
 import json
+
 
 logger = logging.getLogger(__name__)
 logger.debug('Import ' + __name__)

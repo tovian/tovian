@@ -4,8 +4,6 @@
 Module with mediaplayer components.
 """
 
-__version__ = "$Id: videoplayer.py 347 2013-12-10 15:41:12Z herbig $"
-
 import time
 import datetime
 import logging

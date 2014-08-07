@@ -7,8 +7,6 @@ Annotation class handles user video annotation actions:
  - processing and committing changes
 """
 
-__version__ = "$Id: annotation.py 356 2014-05-06 18:39:59Z herbig $"
-
 import time
 import ast
 import logging

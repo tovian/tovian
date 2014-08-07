@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-__version__ = "$Id: fixtures.py 318 2013-11-21 09:12:44Z campr $"
-
 import tovian.models.entity as entity
 import tovian.models.defaults as defaults
 
