@@ -1,0 +1,4 @@
+!update.bat
+dist
+build
+*.zip
