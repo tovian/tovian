@@ -95,7 +95,7 @@ class Ui_DownloadDialog(object):
         DownloadDialog.setWindowTitle(QtGui.QApplication.translate("DownloadDialog", "Downloading file...", None, QtGui.QApplication.UnicodeUTF8))
         self.totalSizeLbl_st.setText(QtGui.QApplication.translate("DownloadDialog", "Total size:", None, QtGui.QApplication.UnicodeUTF8))
         self.totalSizeLbl.setText(QtGui.QApplication.translate("DownloadDialog", "0", None, QtGui.QApplication.UnicodeUTF8))
-        self.downloadedLbl_st.setText(QtGui.QApplication.translate("DownloadDialog", "Donwloaded:", None, QtGui.QApplication.UnicodeUTF8))
+        self.downloadedLbl_st.setText(QtGui.QApplication.translate("DownloadDialog", "Downloaded:", None, QtGui.QApplication.UnicodeUTF8))
         self.downloadedLbl.setText(QtGui.QApplication.translate("DownloadDialog", "0", None, QtGui.QApplication.UnicodeUTF8))
 
 import icons_rc
