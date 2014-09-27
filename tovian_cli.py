@@ -518,6 +518,7 @@ def action_update(args, root_dir):
 
 if __name__ == "__main__":
     root_dir = os.path.dirname(os.path.realpath(sys.argv[0]))
+    # root_dir = unicode(root_dir, sys.getfilesystemencoding())
 
     all_exportable_entities = ['Annotator', 'Video', 'AnnotationAttribute', 'AnnotationObject', 'AnnotationValue']
     actions_using_database = ['init_db', 'load_fixtures', 'db_benchmark', 'export', 'import', 'add', 'init_default_data']

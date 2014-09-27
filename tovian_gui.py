@@ -95,6 +95,7 @@ def check_requirements():
 def start(environment='production'):
     # initialize logging before anything else
     root_dir = os.path.dirname(os.path.realpath(sys.argv[0]))
+    # root_dir = unicode(root_dir, sys.getfilesystemencoding())
     log_dir = os.path.join(root_dir, 'log')
 
     if not os.path.isdir(log_dir):
