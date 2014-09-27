@@ -369,7 +369,6 @@ class Annotation(QObject):
             self.edited_graphics_object.NOT_ACTIVE_COLOR = graphics_object.not_active_color
             self.edited_graphics_object.setPen(graphics_object.pen())
             self.edited_graphics_object.setFontSize(self.label_font_size)
-            print labels[0], labels[1]
             self.edited_graphics_object.setLabels(labels[0], labels[1])
             self.edited_graphics_object.setPos(graphics_object.pos())
             self.edited_graphics_object.resize(graphics_object.width, graphics_object.height)
