@@ -433,8 +433,8 @@ class Logs():
             else:
                 self.execution_number = last_log[0].execution_number + 1
 
-        dthandler = lambda obj: obj.isoformat() if isinstance(obj, datetime.datetime) else (obj.decode(locale.getdefaultlocale()[1] or 'utf8') if isinstance(obj, str) else None)
-        value_encoded = json.dumps(value, default=dthandler, indent=1)
+        dthandler = lambda obj: obj.isoformat() if isinstance(obj, datetime.datetime) else None
+        value_encoded = json.dumps(value, default=dthandler, indent=1, encoding=locale.getdefaultlocale()[1] or 'utf-8')
 
         database.db.engine.execute(
             entity.Log.__table__.insert(),
