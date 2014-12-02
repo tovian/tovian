@@ -10,6 +10,7 @@ import sqlalchemy
 import logging
 import datetime
 import json
+import locale
 
 
 logger = logging.getLogger(__name__)
@@ -432,7 +433,7 @@ class Logs():
             else:
                 self.execution_number = last_log[0].execution_number + 1
 
-        dthandler = lambda obj: obj.isoformat() if isinstance(obj, datetime.datetime) else None
+        dthandler = lambda obj: obj.isoformat() if isinstance(obj, datetime.datetime) else (obj.decode(locale.getdefaultlocale()[1] or 'utf8') if isinstance(obj, str) else None)
         value_encoded = json.dumps(value, default=dthandler, indent=1)
 
         database.db.engine.execute(
