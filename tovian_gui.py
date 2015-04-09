@@ -15,7 +15,7 @@ from tovian import log
 logger = logging.getLogger(__name__)
 logger.debug('Import ' + __name__)
 
-colorama.init()
+# colorama.init()
 
 
 environments = {
