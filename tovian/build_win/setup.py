@@ -2,12 +2,17 @@
 
 from distutils.core import setup
 import zipfile
-import py2exe
 import os
-import update_version_info
 import shutil
-import PySide
+import sys
 
+import PySide
+import py2exe
+
+import update_version_info
+
+sys.path.append("C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\VC\\redist\\x86\\Microsoft.VC90.CRT")
+sys.path.append("C:\\Program Files\\Microsoft Visual Studio 9.0\\VC\\redist\\x86\\Microsoft.VC90.CRT")
 
 # automatically extract path to PySide
 dir_pyside = os.path.dirname(PySide.__file__)

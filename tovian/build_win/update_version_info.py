@@ -36,7 +36,7 @@ if __name__ == "__main__":
     with open(version_fn, 'r') as fr:
         version_data = json.load(fr)
 
-    version_data['revision'] = get_revision('../..')
+    version_data['revision'] = get_revision(os.path.join('..', '..'))
     version_data['build_date'] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     with open(version_fn, 'w') as fw:
